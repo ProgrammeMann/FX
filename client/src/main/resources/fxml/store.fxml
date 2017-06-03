@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<AnchorPane xmlns="http://javafx.com/javafx/8"
+            xmlns:fx="http://javafx.com/fxml/1"
+            id="rootPane"
+            fx:controller="com.springapp.mvc.controllers.StoreController"
+            styleClass="main-panel">
+
+    <FlowPane>
+
+        <FlowPane fx:id="flowPane">
+            <Label fx:id="store" text="qwe"/>
+            <ListView fx:id="goodListView"></ListView>
+            <Label text="Count:"></Label>
+            <TextField fx:id="count"></TextField>
+            <Button fx:id="button" text="Update" onAction="#update"></Button>
+            <Label fx:id="messages"/>
+        </FlowPane>
+        <FlowPane>
+            <Label text="Migrate goods in: "/>
+            <ListView fx:id="storeListView"></ListView>
+            <Label text="Move to store:"/>
+            <Button fx:id="moveButton" onAction="#migrate" text="move" layoutX="249.0"/>
+        </FlowPane>
+
+    </FlowPane>
+</AnchorPane>

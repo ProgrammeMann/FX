@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml" id="rootPane"
+            fx:controller="com.springapp.mvc.controllers.OrdersController"
+            styleClass="main-panel">
+
+    <TableView fx:id="orderTableView" layoutX="12.0" layoutY="62.0" prefHeight="324.0">
+        <columns>
+
+            <TableColumn prefWidth="80.0" text="№" fx:id="idCol"/>
+            <TableColumn prefWidth="150.0" text="User" fx:id="userIdCol"/>
+            <TableColumn prefWidth="150.0" text="Good" fx:id="goodNameCol"/>
+            <TableColumn prefWidth="150.0" text="State" fx:id="orderStateCol"/>
+        </columns>
+    </TableView>
+    <Button text="Sent" onAction="#doOrderSENDING" fx:id="orderSentBtn" layoutX="200.0"/>
+    <Button text="Done" onAction="#doOrderDONE" fx:id="orderDoneBtn" layoutX="249.0"/>
+</AnchorPane>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml" id="rootPane"
+            fx:controller="com.springapp.mvc.controllers.MainController">
+    <ListView fx:id="storeListView"></ListView>
+    <Button onAction="#getOrdersWindow" text="Orders" layoutX="249.0"/>
+
+</AnchorPane>
